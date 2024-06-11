@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "version To-Do List",
+    "version": "1.0",
+    "description": "A simple to-do list extension",
+    "permissions": ["storage", "tabs", "background", "commands"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "open_todo_list": {
+        "suggested_key": {
+          "default": "Ctrl+Q",
+          "mac": "Command+Q"
+        },
+        "description": "Open the To-Do List"
+      }
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+  
